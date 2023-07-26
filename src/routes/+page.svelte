@@ -1,5 +1,6 @@
 <script>
-    import UserContatiner from './userContatiner.svelte';
+    import UserContainer from './UserContainer.svelte';
+    import PlayersArea from './PlayersArea.svelte';
 </script>
 <style>
     div {
@@ -13,9 +14,25 @@
         height: 100%;
         background-color: darkgray;
     }
+    .upperArea{
+        margin: 0;
+        max-height: 60%;
+        display: flex; /*added*/
+        flex-direction: row; /*added*/
+        justify-content: center;
+        align-content: center;
+        background-color: antiquewhite;
+    }
+    h1 {
+        margin: 0;
+    }
 </style>
 <div>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<UserContatiner></UserContatiner>
+<h1>Bleak</h1>
+<div class="upperArea">
+    <UserContainer></UserContainer>
+    <PlayersArea></PlayersArea>
 </div>
+
+</div>
+

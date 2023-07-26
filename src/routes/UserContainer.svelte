@@ -1,5 +1,8 @@
 <script>
-    import UserLand from './userLand.svelte'
+    import UserLand from './UserLand.svelte'
+
+    let vw = 1920
+
 </script>
 <style>
     @font-face {
@@ -12,10 +15,11 @@
         border-radius: 5px;
         background-color: whitesmoke;
         border: 2px black solid;
-        width: 20%;
-        height: 60%;
-        padding:  0;
-        margin: 0;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 0 ;
+        margin: 1%;
     }
 
     .userContainerMainHeader {
@@ -25,8 +29,8 @@
         background-color: black;
     }
     .userContainerMainHeaderText {
-        padding:  2px;
-        padding-bottom: 3px;
+        padding:  3px;
+       
         margin: 0;
         font-family: 'Comic Mono';
         color: white;
@@ -34,7 +38,7 @@
     
 </style>
 
-<div class="userContainerMainPage">
+<div class="userContainerMainPage" style="width:{vw/2}">
     <div class="userContainerMainHeader"> 
        <p class="userContainerMainHeaderText"> Placeholder Country</p>
     </div>

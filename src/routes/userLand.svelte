@@ -1,5 +1,5 @@
 <script>
-    import {Troop} from './troop.svelte'
+    import Troop from './Troop.svelte'
 </script>
 
 <style>
@@ -13,7 +13,10 @@
         background-color: whitesmoke;
         border: 2px black solid;
         width: auto;
-        height:auto;
+        flex: 1;
+        flex-direction: column;
+        display: block;
+        height: fit-content;
         padding:  0;
         border-radius: 5px;
         margin: 1%;
@@ -32,6 +35,24 @@
     
         font-family: 'Comic Mono';
     }
+    
+    .vLine {
+      
+        width: 2px;
+        style: 0 auto;
+        background-color: rgb(99, 99, 99);
+        margin: 1%; 
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .troopLine{
+      
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* Column | row */
+        
+    }
  
 
 </style>
@@ -40,6 +61,12 @@
 <div class="userLandMain">
     <div class="userLandMainHeader" >
         <p class="userLandMainHeaderText"> FakeLand #1 </p>
-    </div>    
-    <Troop/>
+    </div>
+    <div class="troopLine"> 
+        <Troop />
+        <div class="vLine"/>
+        <Troop />
+        <div class="vLine"/>
+        <Troop />
+    </div>   
 </div>
