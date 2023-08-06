@@ -16,6 +16,7 @@
         background-color: whitesmoke;
         border: 2px black solid;
         height: fit-content;
+        width: 100% ;
         display: flex;
         flex-direction: column;
         padding: 0 ;
@@ -24,6 +25,8 @@
 
     .userContainerMainHeader {
         padding:  0;
+        white-space: nowrap;
+        overflow: hidden;
         border-radius: 0 0 1px 1px;
         margin: 0;
         background-color: black;
@@ -38,7 +41,7 @@
     
 </style>
 
-<div class="userContainerMainPage" style="width:{vw/2}">
+<div class="userContainerMainPage">
     <div class="userContainerMainHeader"> 
        <p class="userContainerMainHeaderText"> Placeholder Country</p>
     </div>
