@@ -16,7 +16,7 @@
         background-color: whitesmoke;
         border: 2px black solid;
         height: fit-content;
-        width: 100% ;
+        width: 30% ;
         display: flex;
         flex-direction: column;
         padding: 0 ;
