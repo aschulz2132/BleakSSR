@@ -1,6 +1,5 @@
 <script>
     import Troop from './Troop.svelte'
-    let nuhuh = "yuhuh";
 </script>
 
 <style>

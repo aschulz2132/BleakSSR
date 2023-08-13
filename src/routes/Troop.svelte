@@ -3,20 +3,11 @@
 </script>
 
 <style>
-    .buttonShell {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        background-color: black;
-        height:0;
-        width: 30%;
-        padding-bottom:20%;
-        border-radius: 5px;
-        margin: 7%;
-      
+    @font-face {
+        font-family: 'Comic Mono';
 
+        src: url(https://dtinth.github.io/comic-mono-font/ComicMono.ttf) format('woff2');
+        
     }
     .square-box{
 
@@ -26,7 +17,7 @@
     width: 100%;
     overflow: hidden;
     background: black;
-    margin:2%;
+    margin:5%;
     border-radius: 5px;
   
 }
@@ -48,15 +39,11 @@
     text-align: center;
     flex-direction: column;
 }
-    .numberBox {
-        color: white;
-        text-align: center;
-        padding: 0;
-        
-        
-
+    
+    p {
+        font-family: 'Comic Mono';
+        font-size: large;
     }
-
 </style>
 
 <div class="square-box" style>
