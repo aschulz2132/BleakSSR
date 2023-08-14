@@ -4,10 +4,21 @@
     import { onMount } from 'svelte';
     let mainArea, sleft;
     let box;
+    let area
 
-    function handleMouse(){
+    export const horizontalWheelScroll = (node) => {
+    node.style.scrollBehavior = "smooth";
 
-}
+    node.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        node.scrollLeft += evt.deltaY;
+    });
+};
+
+
+onMount(()=>{
+    horizontalWheelScroll(area);
+});
 
 
 
@@ -33,7 +44,9 @@
    
 </style>  
 
-<div class="mainArea" >
+<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="mainArea" bind:this={area} on:scroll={()=>{console.log("e")}}>
     <PlayerContainer />
     <PlayerContainer />
     <PlayerContainer />
