@@ -30,7 +30,7 @@
     .upperArea {
         width: 100%;
         margin: 0;
-        max-height: 60%;
+        height: fit-content;
         display: flex; /*added*/
         flex-direction: row; /*added*/
         justify-content: center;
@@ -43,10 +43,22 @@
     }
 
     .lowerArea{
-        height: fit-content;
-        min-height: 30%;
-        text-align: center;
-        width: fit-content;
+        width: 100%;
+        margin: 0;
+        height: 30%;
+        display: flex; /*added*/
+        flex-direction: row; /*added*/
+        justify-content: center;
+        align-content: center;
+        background-color: antiquewhite;
+    }
+    .centerHorizontal {
+        height: auto;
+        display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+
     }
 </style>
 
@@ -59,7 +71,9 @@
         <UserContainer  />
         <PlayersArea style="flex: 1;overflow-x:scroll;" bind:this={PA}  />
     </div></div>
+    
     <div class="lowerArea">
         <HandArea/>
     </div>
+
 </div>
