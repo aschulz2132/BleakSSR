@@ -13,12 +13,13 @@
     }
     .userContainerMainPage {
         border-radius: 5px;
-        float: none;
+       
 
         background-color: whitesmoke;
         border: 2px black solid;
         height: fit-content;
         width: 27% ;
+        float: none;
         display: inline-block;
         padding: 0 ;
         margin: 1%;

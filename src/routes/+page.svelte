@@ -15,6 +15,12 @@
 
 
 <style>
+       @font-face {
+        font-family: "Comic Mono";
+
+        src: url(https://dtinth.github.io/comic-mono-font/ComicMono.ttf)
+            format("woff2");
+    }
     div {
         height: 100%;
     }
@@ -43,22 +49,28 @@
     }
 
     .lowerArea{
-        width: 100%;
-        margin: 0;
-        height: 30%;
-        display: flex; /*added*/
-        flex-direction: row; /*added*/
-        justify-content: center;
-        align-content: center;
-        background-color: antiquewhite;
+        background-color: whitesmoke;
+        border: 2px black solid;
+        width:100%;
+    
+      
+    
+        height: fit-content;
+        padding:  0;
+        border-radius: 5px;
+        margin: 1%;
     }
     .centerHorizontal {
-        height: auto;
+        height: 40%;
         display: flex;
+        
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 
+    }
+    .deckNameTab{
+        background-color: black;
     }
 </style>
 
@@ -71,9 +83,9 @@
         <UserContainer  />
         <PlayersArea style="flex: 1;overflow-x:scroll;" bind:this={PA}  />
     </div></div>
-    
-    <div class="lowerArea">
+    <div class="centerHorizontal">
+        
         <HandArea/>
+   
     </div>
-
 </div>

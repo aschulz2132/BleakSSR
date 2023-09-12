@@ -30,11 +30,11 @@ onMount(()=>{
         height: fit-content;
     
         margin: 2%;
-        display: inline-block;      
+        
         border: 2px black solid;
         padding: 0 ;
         margin: 1%;
-
+        display: inline-block;    
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
