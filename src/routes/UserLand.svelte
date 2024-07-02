@@ -15,7 +15,7 @@
         width: auto;
         flex: 1;
         flex-direction: column;
-        display: block;
+    
         height: fit-content;
         padding:  0;
         border-radius: 5px;

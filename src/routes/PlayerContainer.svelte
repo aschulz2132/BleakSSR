@@ -13,12 +13,14 @@
     }
     .userContainerMainPage {
         border-radius: 5px;
+       
+
         background-color: whitesmoke;
         border: 2px black solid;
         height: fit-content;
-        width: 30% ;
-        display: flex;
-        flex-direction: column;
+        width: 27% ;
+        float: none;
+        display: inline-block;
         padding: 0 ;
         margin: 1%;
     }
@@ -41,9 +43,10 @@
     
 </style>
 
-<div class="userContainerMainPage">
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="userContainerMainPage" >
     <div class="userContainerMainHeader"> 
-       <p class="userContainerMainHeaderText"> Placeholder Country</p>
+       <p class="userContainerMainHeaderText"> Placeholder Enemy</p>
     </div>
     <UserLand/> 
     <UserLand/>
