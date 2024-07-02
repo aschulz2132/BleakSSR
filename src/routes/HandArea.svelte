@@ -1,7 +1,8 @@
 <script>
-    import HandTroop from "./HandTroop.svelte";
+    import EmptyHandPlaceholder from "./EmptyHandPlaceholder.svelte";
+import HandTroop from "./HandTroop.svelte";
     import PlayerContainer from "./PlayerContainer.svelte";
-
+    import { playerItemsInHand, playerHandContents } from './stores.js';
     import { onMount } from "svelte";
     let mainArea, sleft;
     let box;
@@ -34,8 +35,11 @@
         console.log("e");
     }}
 >
-<p class="placeholder">No cards!<br>Refill soon.</p>
-<HandTroop />
+{#if $playerItemsInHand == 0}
+	<EmptyHandPlaceholder/>
+{:else}
+	<p>wip</p>
+{/if}
    
 </div>
 </div>
